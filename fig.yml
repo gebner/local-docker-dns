@@ -1,0 +1,6 @@
+rawdns:
+  build: .
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+  ports:
+    - "127.0.0.1:53535:53/udp"
